@@ -1,0 +1,130 @@
+.about-container {
+  text-align: center;
+}
+
+.about-content {
+  padding-top: 54px;
+
+  @include mq(tab) {
+    display: flex;
+    padding-top: 72px;
+  }
+}
+
+.about-label {
+  font-family: $primary-font;
+  color: $white-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  @include mq(tab) {
+    font-size: 22px;
+  }
+
+  @include mq(desk) {
+    font-size: 30px;
+  }
+}
+
+.about-titel {
+  color: $white-text-color;
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  @include mq(tab) {
+    font-size: 34px;
+  }
+  @include mq(desk) {
+    font-size: 36px;
+  }
+}
+
+.about__text {
+  color: $white-text-color;
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+
+  @include mq(tab) {
+    text-align: left;
+  }
+
+  @include mq(desk) {
+    font-size: 16px;
+  }
+}
+
+.about__button.button {
+  margin-top: 10px;
+
+  @include mq(tab) {
+    margin-top: 32px;
+    margin-left: 0;
+  }
+}
+
+.about__description {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  overflow: hidden;
+
+  @include mq(tab) {
+    padding-left: 38px;
+    padding-top: 0;
+    display: inline-block;
+  }
+
+  @include mq(desk) {
+    padding-left: 109px;
+    padding-right: 121px - 16px;
+  }
+}
+
+.image-box {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-box::before {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  content: '';
+  // display: inline-block;
+  width: 279px;
+  height: 278px;
+  border-radius: 50%;
+  display: block;
+
+  @include mq(tab) {
+    width: 330px;
+    height: 330px;
+    margin: 0;
+  }
+
+  background-color: $second-cards-color;
+}
+
+.about-img {
+  display: inline-block;
+
+  @include mq(tab) {
+    display: block;
+    width: 330px;
+    height: 330px;
+  }
+}
